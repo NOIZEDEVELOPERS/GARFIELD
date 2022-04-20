@@ -1,0 +1,34 @@
+{
+    "name": "GARFIELD BOT BY NOIZE v6.0",
+    "description": "GARFIELD WHATSAPP BOT FROM NOIZE DEVELOPERS CODED BY THARINDU LIYANAGE (ZENOI).",
+    "logo": "https://i.ibb.co/G2bpd2B/Pics-Art-22-03-26-14-51-06-509.png",
+    "keywords": ["WHATSAPP", "HEROKU-BOT", "SECURED", "FAST", "AURORA-NPM", "SAFE WHATSAPP BOT", "GARFIELD-WHATSAPP", "NOIZE", "BESTBOT", "NOIZE", "WHATSAPP", "GITHUB", "ZENOI"],
+    "repository": "https://github.com/Zenoixnoize/GARFIELD-6.0",
+    "website":   "https://garfieldbot.yolasite.com/",
+    "success_url": "https://github.com/Zenoixnoize/GARFIELD-6.0",
+    "stack": "container",
+    "env": {
+        "GARFIELD_SESSION": {
+            "description": "Enter the code you received when you Linked Garfield QR here",
+            "required": true
+        },
+        "HEROKU_API_KEY": {
+            "description": "Enter Your Heroku API Key ===> https://dashboard.heroku.com/account",
+            "required": true
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Re Enter you app name (same letters) ",
+            "required": true
+        },
+        "DEPLOYER": {
+            "description": "Enter Your name",
+            "required": false
+        }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }
